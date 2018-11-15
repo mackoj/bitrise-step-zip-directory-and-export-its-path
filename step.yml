@@ -72,7 +72,6 @@ inputs:
         Define the path to the directory you want zipped here.
       is_expand: true
       is_required: true
-      value_options: []
   - include_directory: true
     opts:
       title: "Include the directory in the zip"
@@ -82,7 +81,7 @@ inputs:
         just want the files in the directory.
       is_expand: false
       is_required: true
-      value_options: []
+      value_options: [true, false]
 
 outputs:
   - ZIP_FILE:
