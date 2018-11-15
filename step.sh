@@ -21,4 +21,4 @@ else
 	zip -r ${directory_to_zip}.zip ${directory_to_zip}
 fi
 
-envman add --key ZIP_FILE --value $(pwd)/temp.zip
+envman add --key ZIP_FILE --value $(pwd)/${directory_to_zip}.zip
