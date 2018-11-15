@@ -64,15 +64,23 @@ toolkit:
 
 
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - directory_to_zip: 
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Path to the directory to zip."
+      summary: Path to the directory to zip.
       description: |
-        Description of this input.
-
-        Can be Markdown formatted text.
+        Define the path to the directory you want zipped here.
       is_expand: true
+      is_required: true
+      value_options: []
+  - include_directory: true
+    opts:
+      title: "Include the directory in the zip"
+      summary: If set to true, the zip file will include the parent directory.
+      description: |
+        Set to true to include the parent directory in the zip file, false if you 
+        just want the files in the directory.
+      is_expand: false
       is_required: true
       value_options: []
 
