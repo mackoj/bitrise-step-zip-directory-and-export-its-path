@@ -64,7 +64,7 @@ toolkit:
 
 
 inputs:
-  - directory_to_zip: 
+  - directory_to_zip: $BITRISE_DIRECTORY_TO_ZIP
     opts:
       title: "Path to the directory to zip."
       summary: Path to the directory to zip.
@@ -81,7 +81,9 @@ inputs:
         just want the files in the directory.
       is_expand: false
       is_required: true
-      value_options: [true, false]
+      value_options:
+        - true
+        - false
 
 outputs:
   - ZIP_FILE:
