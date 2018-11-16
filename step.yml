@@ -51,11 +51,9 @@ run_if: ""
 
 deps:
   brew:
-  - name: git
-  - name: wget
+  - name: zip
   apt_get:
-  - name: git
-  - name: wget
+  - name: zip
 
 
 toolkit:
